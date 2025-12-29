@@ -33,7 +33,7 @@ jobs:
       - name: Setup environment
         shell: bash
         run: |
-          printf >> "${GITHUB_ENV}" -- '%s=%s\n' \
+          printf -- '%s=%s\n' >> "${GITHUB_ENV}" \
             'IMAGE_NAME' "${GITHUB_REPOSITORY@L}"
 
       - name: Checkout repository
