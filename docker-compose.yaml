@@ -3,7 +3,7 @@ name: jitterentropy
 services:
     rngd:
         build:
-            context: https://github.com/tcely/jitterentropy-rngd.git#patch-1
+            context: .
         cap_add:
             - SYS_ADMIN
         cap_drop:
